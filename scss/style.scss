@@ -2617,6 +2617,22 @@ input[type="submit"].form-control:focus {
   perspective: 1000px;
   backface-visibility: hidden;
 
+  .description {
+    margin-bottom: 1rem;
+  }
+
+  .static-banner-one {
+    margin-top: 4rem;
+
+    .container {
+      padding-left: 0;
+
+      a { 
+        margin-right: 2rem;
+      }
+    }
+  }
+
   .layout-2 & {
     // padding-bottom: 290px;
   }

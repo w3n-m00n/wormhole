@@ -2189,6 +2189,18 @@ input[type=submit].form-control:focus {
   perspective: 1000px;
   backface-visibility: hidden;
 }
+.banner-center-box .description {
+  margin-bottom: 1rem;
+}
+.banner-center-box .static-banner-one {
+  margin-top: 4rem;
+}
+.banner-center-box .static-banner-one .container {
+  padding-left: 0;
+}
+.banner-center-box .static-banner-one .container a {
+  margin-right: 2rem;
+}
 .page-thank-you .banner-center-box {
   padding-bottom: 120px;
 }
