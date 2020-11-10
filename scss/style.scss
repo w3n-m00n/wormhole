@@ -2081,6 +2081,7 @@ input[type="submit"].form-control:focus {
   .hb-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
   }
 
@@ -4735,3 +4736,5 @@ html {
 @import "css-helpers";
 
 // ==================================
+
+@import "updates"

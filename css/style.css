@@ -1862,6 +1862,7 @@ input[type=submit].form-control:focus {
 .header-bar .hb-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
 }
 /* Header Bar Sticky */
@@ -6112,6 +6113,12 @@ input[type=submit].form-control, .btn.gradient {
   .h-md-900 {
     height: 900px;
   }
+}
+/* =====================================================================
+ *   Addtional Updates or Changes
+ * =================================================================== */
+.yt-servicelink {
+  display: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
