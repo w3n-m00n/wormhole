@@ -2081,6 +2081,7 @@ input[type="submit"].form-control:focus {
   .hb-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
   }
 
@@ -2616,6 +2617,22 @@ input[type="submit"].form-control:focus {
   width: 100%;
   perspective: 1000px;
   backface-visibility: hidden;
+
+  .description {
+    margin-bottom: 1rem;
+  }
+
+  .static-banner-one {
+    margin-top: 4rem;
+
+    .container {
+      padding-left: 0;
+
+      a { 
+        margin-right: 2rem;
+      }
+    }
+  }
 
   .layout-2 & {
     // padding-bottom: 290px;
@@ -4719,3 +4736,5 @@ html {
 @import "css-helpers";
 
 // ==================================
+
+@import "updates"
