@@ -1141,21 +1141,21 @@ input[type="submit"].form-control:focus {
       margin-bottom: 18px;
     }
   }
+
+  @media (min-width: 992px) {
+    &.reversed {
+      .box-icon {
+        float: right;
+        margin-left: 20px;
+        margin-right: 0;
+      }
+
+      .box-content {
+        text-align: right;
+      }
+    }
+  } // > 992px width
 }
-
-@media (min-width: 992px) {
-  &.reversed {
-    .box-icon {
-      float: right;
-      margin-left: 20px;
-      margin-right: 0;
-    }
-
-    .box-content {
-      text-align: right;
-    }
-  }
-} // > 992px width
 
 
 
