@@ -1,3 +1,8 @@
 /* =====================================================================
  *   Addtional Updates or Changes
  * =================================================================== */
+
+// Remove Yandex translate link
+.yt-servicelink {
+    display: none !important;
+}
