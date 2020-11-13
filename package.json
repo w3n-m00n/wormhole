@@ -5,11 +5,13 @@
     "start": "serve",
     "build": "sass scss/style.scss css/style.css",
     "dev": "serve & nodemon --exec 'yarn build'",
+    "format": "prettier --write ./index.html",
     "postinstall": "yarn build"
   },
   "private": true,
   "devDependencies": {
     "nodemon": "^2.0.6",
+    "prettier": "^2.1.2",
     "sass": "^1.29.0",
     "serve": "^11.3.2"
   }
