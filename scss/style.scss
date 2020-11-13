@@ -2616,6 +2616,10 @@ input[type="submit"].form-control:focus {
   perspective: 1000px;
   backface-visibility: hidden;
 
+  @media (min-width: 992px) {
+    margin-top: 4rem;
+  }
+
   .description {
     margin-bottom: 1rem;
   }
