@@ -1910,11 +1910,10 @@ input[type=submit].form-control:focus {
   color: #fff;
 }
 
-@media (max-width: 992px) {
-  #header-bar-1 .hb-content {
-    justify-content: center;
-  }
+#header-bar-1 .hb-content {
+  justify-content: space-between;
 }
+
 /**
  * -------------------------------------------------------------------------------
  * ( 04 ) - Banner
@@ -2199,8 +2198,8 @@ input[type=submit].form-control:focus {
 .banner-center-box .static-banner-one .container {
   padding-left: 0;
 }
-.banner-center-box .static-banner-one .container a {
-  margin-right: 2rem;
+.banner-center-box .static-banner-one .container a + a {
+  margin-left: 2rem;
 }
 .page-thank-you .banner-center-box {
   padding-bottom: 120px;
