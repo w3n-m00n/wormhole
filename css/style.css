@@ -62,7 +62,7 @@ body {
   position: relative;
   font: 14px/1.7 "Open Sans", sans-serif;
   background: #fff;
-  color: #999;
+  color: #808080;
 }
 
 .font-heading-primary {
@@ -96,7 +96,7 @@ body.boxed .header-bar-wrap {
 body.boxed #full-container {
   margin: 60px auto;
   border-radius: 5px;
-  box-shadow: 0 9px 30px 5px rgba(153, 153, 153, 0.2);
+  box-shadow: 0 9px 30px 5px rgba(128, 128, 128, 0.2);
 }
 body.boxed #full-container .header-bar,
 body.boxed #full-container #scroll-progress {
@@ -207,7 +207,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #999;
+  color: #808080;
 }
 
 h4,
@@ -324,7 +324,6 @@ img {
 /*  [ 07 ] - Strong
 ====================== */
 strong {
-  color: #222;
   font-weight: 600;
 }
 
@@ -627,42 +626,10 @@ input[type=submit].form-control:focus {
     display: block;
   }
 }
-/*  [ 02 ] - Parallax Section
-=============================== */
-.parallax-section {
-  width: 100%;
-  position: relative;
-  background-color: #ccc;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.parallax-section .section-content {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  padding: 120px 0;
-  z-index: 2;
-  background-attachment: fixed;
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.parallax-section .bg-element {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: no-repeat top center/cover;
-}
-.parallax-section .bg-element + img {
-  display: none;
+.bg-element {
+  background-position: center center !important;
 }
 
-@media (max-width: 768px) {
-  .parallax-section > .bg-element {
-    background-position: initial !important;
-  }
-}
 /*  [ 03 ] - Overlay Colored & Pattern
 ======================================== */
 .overlay-colored,
@@ -783,7 +750,7 @@ input[type=submit].form-control:focus {
   margin-bottom: 40px;
   min-height: 300px;
   border-radius: 4px;
-  box-shadow: 0 20px 40px rgba(153, 153, 153, 0.4);
+  box-shadow: 0 20px 40px rgba(128, 128, 128, 0.4);
   background: #ddd;
 }
 .video-preview:hover .overlay-colored {
@@ -1579,7 +1546,7 @@ input[type=submit].form-control:focus {
   background: transparent;
 }
 .social-icons.grey li a i:first-child {
-  color: #999;
+  color: #808080;
 }
 .social-icons.white li a i:first-child {
   color: #fff;
@@ -1649,7 +1616,7 @@ input[type=submit].form-control:focus {
 .testimonial-single-1 .ts-person span {
   display: block;
   font-size: 12px;
-  color: #999;
+  color: #808080;
 }
 .testimonial-single-1 .ts-img {
   overflow: hidden;
@@ -1823,7 +1790,7 @@ input[type=submit].form-control:focus {
 }
 .logo.logo-text h3 + span {
   font-size: 11px;
-  color: #999;
+  color: #808080;
 }
 
 .logo-header {
@@ -1881,7 +1848,7 @@ input[type=submit].form-control:focus {
 }
 .header-bar .logo-header.logo-text h3 + span {
   opacity: 1;
-  color: #999;
+  color: #808080;
 }
 .header-bar .menu-main > li > a {
   color: #222;
@@ -2182,12 +2149,13 @@ input[type=submit].form-control:focus {
 }
 /* Banner Center Box */
 .banner-center-box {
-  padding: 120px 0 300px;
+  padding: 120px 0;
   max-height: 100%;
   max-width: 100%;
   width: 100%;
   perspective: 1000px;
   backface-visibility: hidden;
+  text-shadow: 0 0 3rem rgba(0, 0, 0, 0.8);
 }
 @media (min-width: 992px) {
   .banner-center-box {
@@ -2357,7 +2325,7 @@ body::after {
   text-align: center;
   padding: 40px 40px 0;
   border-radius: 0;
-  color: #999;
+  color: #808080;
 }
 .cta-subscribe .box-title + .box-content {
   padding-top: 30px;
@@ -3140,7 +3108,7 @@ html.scroll-lock .popup-preview {
   line-height: 60px;
 }
 .box-info-2.text-white .box-content {
-  color: #999;
+  color: #808080;
 }
 
 /* Slider Boxes Features */
@@ -3435,7 +3403,7 @@ html.scroll-lock .popup-preview {
   margin-bottom: 14px;
 }
 .box-info-1.text-white .box-content {
-  color: #999;
+  color: #808080;
 }
 
 /*  [ 04 ] - Clients Testimonials
@@ -3636,7 +3604,7 @@ html.scroll-lock .popup-preview {
   margin-bottom: 15px;
 }
 .box-info-3.text-white .box-content {
-  color: #999;
+  color: #808080;
 }
 @media (max-width: 992px) {
   #footer-bar-1 .logo-footer {
@@ -6118,11 +6086,21 @@ input[type=submit].form-control, .btn.gradient {
     height: 900px;
   }
 }
+.inline-block {
+  display: inline-block;
+}
+
 /* =====================================================================
  *   Addtional Updates or Changes
  * =================================================================== */
 .yt-servicelink {
   display: none !important;
+}
+
+.highlights-box {
+  box-shadow: 0 0 45px 0 rgba(34, 34, 34, 0.05);
+  border-radius: 4px;
+  background: white;
 }
 
 /*# sourceMappingURL=style.css.map */
