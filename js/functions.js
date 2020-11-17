@@ -561,3 +561,19 @@ function convertHex(hex, opacity) {
 	result = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + opacity + ')';
 	return result;
 }
+
+// *** Event countdown *** //
+$.getJSON("/events.json", function(events) {
+	const nextEvent = events.sort((a,b) => {
+		return a.date < b.date ? -1 : 1
+	})[0];
+
+	$("#event-countdown-name").text(`${nextEvent.name} event starts in`)
+	$("#event-countdown-timer").text(countdown(nextEvent.timestamp).toString())
+
+	setInterval(() => {
+		$("#event-countdown-timer").text(countdown(nextEvent.timestamp).toString())
+	}, 1000)
+}).fail(function(err) {
+	console.error(err);
+})
