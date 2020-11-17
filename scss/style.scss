@@ -746,6 +746,7 @@ input[type="submit"].form-control:focus {
 } // < 992px width
 
 .bg-element {
+  background-attachment: fixed;
   background-position: center center !important;
 }
 
